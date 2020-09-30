@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 1.0em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+#black{
+    height: 10vh;
+    background-color: black;
+}
+
+#main-doc{
+    display: flex;
+    max-height: 90vh;
+
+}
+#navbar{
+    order: 0;
+    width: 30vw;
+    border-right: 1px solid black;
+}
+
+#wrapper{
+    order: 1;
+    width: 70vw;
+    overflow-y: scroll;
+    border-left: 1px solid black;
+}
+
+header{
+    margin: 30px 30px;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.nav-link{
+    text-decoration: none;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    color: black;
+    margin: 30px 20px;
+    
+}
+
+.main-section ul{
+    list-style-position: inside;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+#navbar ul{
+    overflow-y: scroll;
+    max-height: 70vh;
+}
+.nav-link:hover, header:hover{
+    color: darkgoldenrod;
+}
+
+#navbar li{
+    margin: 10px 10px;
+    list-style-type: none;
+}
+p, h3{
+    margin-left: 30px;
+    padding: 0px 20px;
+    line-height: 1.5em;
+}
+
+.list{
+    width: 60%;
+    border-radius: 10px;
+    background-color: darkgray;
+    margin: 30px auto;
+}
+code, pre{
+    background-color: darkgray;
+    width: 60%;
+    border-radius: 10px;
+    background-color: darkgray;
+    margin: 30px auto;
+    display: block;
+    padding: 10px;
+}
+
+@media screen and (min-width: 991px){
+    #navbar{
+    order: 0;
+    width: 30vw;
+    border-right: 1px solid black;
+    }
+}
+
